@@ -26,6 +26,11 @@ pip install -r requirements.txt
 下载依赖package
 
 ### train model
+To train a Bert-based embedding Rasa-NLU, it's necessary to do the following command:
+```
+bert-serving-start -model_dir=./Path/To/Your/chinese_L-12_H-768_A-12/ -num_worker=1
+```
+Then simply type:
 ```
 make train
 ```
