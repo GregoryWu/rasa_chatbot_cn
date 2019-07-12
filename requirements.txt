@@ -1,4 +1,6 @@
 keras
-rasa-nlu-gao>=0.3.0
+rasa-nlu-gao>=0.3.4
 rasa-sdk
+bert-serving-server==1.8.9
+bert-serving-client==1.8.9
 
