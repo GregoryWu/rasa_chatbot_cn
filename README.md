@@ -34,6 +34,7 @@ export PYTHONPATH=/path/to/your/rasa_chatbot_cn
 To train a Bert-based embedding Rasa-NLU, it's necessary to do the following command:
 ```
 bert-serving-start -model_dir=./path/to/your/chinese_L-12_H-768_A-12/ -num_worker=1
+where chinese_L-12_H-768_A-12 is the Google Chinese BBert pretrained model.
 ```
 Then simply type:
 ```
