@@ -69,7 +69,7 @@ make run-cmdline
 可以使用postman去请求调用
 
 ## Some magical functions
-之前在[rasa-nlu-gao](https://github.com/GaoQ1/rasa_nlu_gq)增加了若干个自定义组件。而在release版本中可以直接将组建在外部调用，比如这里我举个之前的`JiebaPsegExtractor component`的栗子，直接将该组建放在*components*下面，在*config.yml*中：
+之前在[rasa-nlu-gao](https://github.com/GaoQ1/rasa_nlu_gq)增加了若干个自定义组件。而在release版本中可以直接将组建在外部调用，比如这里我举个之前的`JiebaPsegExtractor component`的例子，直接将该组建放在*components*下面，在*config.yml*中：
 ```
 - name: "components.extractors.jieba_pseg_extractor.JiebaPsegExtractor"
   part_of_speech: ["nr"]
