@@ -31,7 +31,7 @@ export PYTHONPATH=/path/to/your/rasa_chatbot_cn
 下载依赖package
 
 ### train model
-To train a Bert-based embedding Rasa-NLU, it's necessary to do the following command:
+To train a Bert-based intent classifier in the Rasa-NLU model, it's necessary to do the following command:
 ```
 bert-serving-start -model_dir=./path/to/your/chinese_L-12_H-768_A-12/ -num_worker=1
 ```
@@ -43,6 +43,11 @@ make train
 训练nlu和core模型，新版本中会将模型自动打包成zip文件
 
 ### run model
+If a Bert-based intent classifier is in the Rasa-NLU model, it's also necessary to do the following command:
+```
+bert-serving-start -model_dir=./path/to/your/chinese_L-12_H-768_A-12/ -num_worker=1
+```
+Then run:
 ```
 make run
 ```
