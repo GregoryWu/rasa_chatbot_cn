@@ -28,7 +28,6 @@ pip install -r requirements.txt
 export PYTHONPATH=/path/to/your/rasa_chatbot_cn
 ```
 
-下载依赖package
 
 ### train model
 To train a Bert-based intent classifier in the Rasa-NLU model, it's necessary to do the following command:
